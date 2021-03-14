@@ -1,8 +1,8 @@
-# (Unnamed) Beat Saber Overlay
+# Beat Saber Overlay
 
 A web-based overlay for Beat Saber
 
-![preview](https://i.imgur.com/fOg4TUp.png)
+![preview](https://i.imgur.com/hPFUG3Q.png)
 
 ## Installation (OBS)
 
@@ -22,12 +22,15 @@ A web-based overlay for Beat Saber
 Options are added to the URL query as such:
 
 ```
-http://reselim.github.io/overlay/?modifiers=top
+http://overlay.christiaanbrant.com?modifiers=scale,rtl
 ```
 
 ### `ip` and `port`
 
-Listen to events from another IP and/or port.
+Listen to events from another IP and/or port. Add it with a plus if you already have modifiers
+```
+http://overlay.christiaanbrant.com?modifiers=scale+ip=127.0.0.1
+```
 
 ### `modifiers`
 
@@ -41,3 +44,23 @@ Multiple modifiers can be seperated with commas.
 	* Scales the overlay by 1.5x, for use on 1080p canvases
 - `test`
 	* Makes the background black, for testing purposes
+
+## Development
+You can make changes to the project and even host it yourself. Just make sure you have the requirements and follow the instalation steps below.
+
+### Requirements
+- [NPM](https://www.npmjs.com/) (Included when you install NodeJS)
+- [NodeJS](https://nodejs.org/en/)
+
+### Instalation
+Open CMD, powershell, or terminal and enter:
+```
+npm install
+```
+And to start the server run
+```
+npm start
+```
+
+# Credits
+[Reselim](https://github.com/Reselim) for creating the project

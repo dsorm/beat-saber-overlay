@@ -1,6 +1,6 @@
 {
-  "scripts":{
-    "start":"http-server"
+  "scripts": {
+    "start": "http-server"
   },
   "requires": true,
   "lockfileVersion": 1,
