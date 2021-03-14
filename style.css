@@ -28,6 +28,7 @@ body {
 }
 
 #cover {
+	height: 90px;
 	overflow: hidden;
 	border-radius: 6px;
 	position: relative;
