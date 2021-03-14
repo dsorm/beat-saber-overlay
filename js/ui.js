@@ -77,7 +77,7 @@ const ui = (() => {
 
 				loop();
 			},
-
+			
 			pause(time) {
 				active = false;
 
@@ -141,7 +141,11 @@ const ui = (() => {
 				njs.innerText = "";
 			}
 
-			timer.start(Date.now(), data.length);
+			timer.start(data.start, data.length);
+
+			if (data.paused){
+				timer.pause(data.paused)
+			}
 		}
 	})();
 
