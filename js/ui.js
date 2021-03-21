@@ -98,6 +98,7 @@ const ui = (() => {
 		var title = document.getElementById("title");
 		var subtitle = document.getElementById("subtitle");
 		var artist = document.getElementById("artist");
+		var map_artist = document.getElementById("map-artist");
 
 		var difficulty = document.getElementById("difficulty");
 		var bpm = document.getElementById("bpm");
@@ -124,14 +125,8 @@ const ui = (() => {
 
 			title.innerText = data.songName;
 			subtitle.innerText = data.songSubName;
-			
-			if (data.levelAuthorName) {
-				artist.innerText = `${data.songAuthorName} \[${data.levelAuthorName}\]`;
-			} else {
-				artist.innerText = data.songAuthorName;
-			}
-			
-
+			artist.innerText = data.songAuthorName;
+			map_artist.innerText = `\[${data.levelAuthorName}\]`
 			difficulty.innerText = data.difficulty;
 			bpm.innerText = `${format(data.songBPM)} BPM`;
 
