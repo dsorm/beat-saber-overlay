@@ -1,3 +1,6 @@
+# Current situation
+I'm migrating to a new server. I'll remove this message when the update when through. Thanks for your understanding.
+
 # Beat Saber Overlay
 
 A web-based overlay for Beat Saber
